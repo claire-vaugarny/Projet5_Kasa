@@ -1,0 +1,28 @@
+.Card {
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    justify-content: flex-end; /* Aligner les éléments vers le bas */
+    height: 300px; /* Ajuste la hauteur de la carte selon tes besoins */
+    background-color: #FF6060; /* Couleur de fond de la carte */
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative; /* Utile pour positionner d'autres éléments si nécessaire */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+  
+}
+  
+
+.cardTitle{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
+    text-underline-position: 'from-font';
+    text-decoration-skip-ink: none;
+    margin-top: auto; /* Ce margin pousse le texte vers le bas */
+    color: #FFFFFF;
+}
+

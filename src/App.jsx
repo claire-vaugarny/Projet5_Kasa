@@ -1,15 +1,17 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Main from "./components/Main"
 
 function App() {
 
 
   return (
     <>
-  <h1>Coucou c'est moi</h1>
-  <Header />
-  <Footer />
-  </>
-)}
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  )
+}
 
 export default App

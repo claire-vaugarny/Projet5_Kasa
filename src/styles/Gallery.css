@@ -1,0 +1,12 @@
+/* Conteneur de la grille */
+.gallery {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px; /* Espace intérieur autour de la grille */
+  
+
+    background-color: #F6F6F6;
+
+}
