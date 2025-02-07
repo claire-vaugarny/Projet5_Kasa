@@ -1,12 +1,12 @@
-import '../styles/Card.css'
+import '../styles/Card.css';
 
-function Card(){
-    return(
-        <div className='Card'>
-            {/* <img src="" alt=""></img> */}
-            <p className='cardTitle'>Titre de la location</p>
+function Card({ cover, title }) {
+    return (
+        <div className="Card">
+            <img className='cardImage' src={cover} alt={title}></img>
+            <p className="cardTitle">{title}</p>
         </div>
-    )
+    );
 }
 
-export default Card
+export default Card;

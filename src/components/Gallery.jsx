@@ -1,32 +1,16 @@
-import Card from "./Card"
-import '../styles/Gallery.css'
+import React from 'react';
+import Card from "./Card";
+import '../styles/Gallery.css';
+import datas from '../data/datas.json';
 
-function Gallery(){
-    return(
+function Gallery() {
+    return (
         <div className="gallery">
-
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  {/* <div class="grid-item"><Card /></div>
-  <div class="grid-item"><Card /></div>
-  <div class="grid-item"><Card /></div>
-  <div class="grid-item"><Card /></div>
-  <div class="grid-item"><Card /></div>
-  <div class="grid-item"><Card /></div>
-  <div class="grid-item"><Card /></div> */}
-
-</div>
-
-    )
+            {datas.map(({ id, cover, title }) => (
+                <Card key={id} cover={cover} title={title} /> // Passer les bonnes props
+            ))}
+        </div>
+    );
 }
 
-export default Gallery
+export default Gallery;
