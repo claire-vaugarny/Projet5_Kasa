@@ -1,8 +1,11 @@
 import '../styles/About.css'
+import Banner from '../common/Banner'
 
 function About() {
     return (
-        <h2>A Propos</h2>
+        <main id="main-About">
+            <Banner pageType="home-about" />
+        </main>
     )
 }
 

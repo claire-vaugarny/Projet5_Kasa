@@ -1,8 +1,11 @@
 import '../styles/Home.css'
+import Banner from '../common/Banner'
 
 function Home() {
     return (
-        <h2>Page d'acceuil</h2>
+        <main id="main-Home">
+            <Banner pageType="home-page" />
+        </main>
     )
 }
 
