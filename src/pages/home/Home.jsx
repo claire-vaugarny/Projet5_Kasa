@@ -6,7 +6,7 @@ import LogementCard from './LogementCard'
 
 function Home() {
     return (
-        <div>
+        <div className='homecontainer'>
             <Banner image={bannerAcceuil} title="Chez vous, partout et ailleurs" />
             <section className="logementsList">
                 {logements.map((logement) => (

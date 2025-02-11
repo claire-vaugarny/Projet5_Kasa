@@ -1,41 +1,35 @@
-import './Collapse.css'
+import { useState } from 'react';
+import './Collapse.scss';
+import array from '../assets/arrayUp.svg'; // Importation de l'image de la flèche vers le haut
 
-function Collapse({ equipments }) {
-    const defaultEquipments = [
-        {
-            title: 'Fiabilité',
-            content:
-                'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',
-        },
-        {
-            title: 'Respect',
-            content:
-                'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
-        },
-        {
-            title: 'Service',
-            content:
-                "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
-        },
-        {
-            title: 'Sécurité',
-            content:
-                "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-        },
-    ];
+function Collapse({ collapseTitle, collapseInfo }) {
+    const [isOpen, setIsOpen] = useState(false);
 
-    const itemsToDisplay = equipments || defaultEquipments;
+    const toggleCollapse = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
-        <div className="collapse" id="navbarNav">
-            <ul className="navbar-nav">
-                {itemsToDisplay.map((equipment, index) => (
-                    <li key={index} className='nav-item'>
-                        {equipment.name}
-                        {equipment.description && <p>{equipment.description}</p>}
-                    </li>
-                ))}
-            </ul>
+        <div className="collapse-container">
+            <button onClick={toggleCollapse} className="collapse-title">
+                {collapseTitle}
+                <img
+                    src={array} 
+                    alt="arrow up"
+                    className={`collapse-icon ${isOpen ? 'open' : ''}`} 
+                />
+            </button>
+            {isOpen && (
+                <div className="collapse-content">
+                    {Array.isArray(collapseInfo) ? (
+                        collapseInfo.map((info, index) => (
+                            <p key={index}>{info}</p> // Affiche chaque élément du tableau
+                        ))
+                    ) : (
+                        <p>{collapseInfo}</p> // Si collapseInfo est une seule chaîne
+                    )}
+                </div>
+            )}
         </div>
     );
 }

@@ -1,0 +1,23 @@
+.infoHostContainer{
+display: flex;
+align-items: center;
+.hostName{
+    font-family: 'Montserrat';
+font-weight: 500;
+font-size: 18px;
+line-height: 25.67px;
+letter-spacing: 0%;
+text-align: right;
+
+width: 93px;
+
+color: #FF6060;
+}
+
+img{
+    border-radius: 50px;
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+}
+}
