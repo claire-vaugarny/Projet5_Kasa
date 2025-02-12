@@ -30,16 +30,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: 'Montserrat';
-        font-size: 5vw;
         font-weight: 700;
-        line-height: 1.2;
+        font-size: 48px;
+        line-height: 68.45px;
+        
         text-align: center;
         color: #FFFFFF;
         width: 90%;
         word-wrap: break-word;
     }
 }
-
+.bannerHome{
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
 .bannerHome::before{
     background-color: rgba(0, 0, 0, 0.6);
 }
