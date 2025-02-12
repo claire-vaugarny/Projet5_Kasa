@@ -1,5 +1,6 @@
 import pinkStar from '../../assets/pinkStar.svg';
 import greyStar from '../../assets/greyStar.svg';
+import './avis.scss'
 
 function Avis({ rating }) {
     const nbgris = 5 - rating; 

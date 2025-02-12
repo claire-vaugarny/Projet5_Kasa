@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './Collapse.scss';
-import array from '../assets/arrayUp.svg'; // Importation de l'image de la flèche vers le haut
+import array from '../assets/arrayUp.svg';
 
-function Collapse({ collapseTitle, collapseInfo }) {
+
+function Collapse({ collapseTitle, collapseInfo, collapsePage }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -10,7 +11,7 @@ function Collapse({ collapseTitle, collapseInfo }) {
     };
 
     return (
-        <div className="collapse-container">
+        <div className={`collapse-container ${collapsePage || ''}`}>
             <button onClick={toggleCollapse} className="collapse-title">
                 {collapseTitle}
                 <img

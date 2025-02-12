@@ -1,7 +1,9 @@
 .tags{
     display: flex;
+    justify-content: left;
     gap : 10px;
     list-style-type: none;
+    padding: 0;
     li{
         width: fit-content;
         color:#FFFFFF;
