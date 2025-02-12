@@ -7,3 +7,10 @@
 main{
   margin:  0 100px;
 }
+
+@media (max-width: 480px) {
+  main{
+       margin: 0px;
+       padding: 0;
+  }
+}

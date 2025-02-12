@@ -1,12 +1,12 @@
 .collapse-container {
     border-radius: 5px;
-    background-color:#FF6060;
+    background-color: #FF6060;
 }
 
 .collapse-title {
     padding: 10px;
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     background: none;
     border: none;
@@ -20,13 +20,15 @@
 }
 
 .collapse-icon {
-    width: 20px; /* Ajuste la taille de l'icône */
+    width: 20px;
+    /* Ajuste la taille de l'icône */
     height: auto;
     transition: transform 0.3s;
 }
 
 .collapse-icon.open {
-    transform: rotate(180deg); /* Tourne l'icône pour indiquer l'ouverture */
+    transform: rotate(180deg);
+    /* Tourne l'icône pour indiquer l'ouverture */
 }
 
 .collapse-content {
@@ -35,13 +37,34 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 25.67px;
-    
+
     background-color: #F6F6F6;
 }
 
-.collapseLogement{
+.collapseLogement {
     width: 50%;
 }
-.collapseAbout{
+
+.collapseAbout {
     width: 100%;
+}
+
+
+@media (max-width:480px) {
+    .collapse-container {
+        width: 100%;
+
+        .collapse-title {
+            font-size: 13px;
+            line-height: 18.54px;
+        }
+
+        .collapse-icon {
+            width: 14px;
+        }
+
+        .collapse-content {
+        font-size: 12px;
+        }
+    }
 }

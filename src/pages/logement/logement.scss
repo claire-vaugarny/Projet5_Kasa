@@ -33,3 +33,31 @@ justify-content: right;
 align-items: flex-end;
 gap: 20px;
 }
+
+@media (max-width : 480px){
+    .logementPage{
+        h2{
+            font-size: 18px;
+            line-height: 25.67px;
+            margin: 0;
+            text-align: left;
+        }
+        h3{
+            font-size: 14px;
+            line-height: 19.96px;
+            text-align: left;
+        }
+    }
+  .collapsesContainer{
+    flex-direction: column;
+  }
+  .topInfoContainer{
+    flex-direction: column;
+  }
+  .infoRightcontainer{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px ;
+  }
+}

@@ -30,8 +30,6 @@ text-align: center;
 a{
     margin: 30px 0;
 
-}
-Link{
 font-family: 'Montserrat';
 font-weight: 500;
 font-size: 18px;
@@ -39,10 +37,26 @@ line-height: 25.67px;
 
 text-decoration: underline;
 text-decoration-style: solid;
-text-decoration-offset: Auto;
 text-decoration-thickness: Auto;
 }
 
 #main-Error404 a:visited{
     color: #000000;
+}
+
+@media (max-width:480px){
+    #main-Error404{
+        padding: 50px;
+        
+        h1{
+            font-size: 96px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+
 }

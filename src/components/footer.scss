@@ -33,3 +33,13 @@
 
     }
 }
+
+@media (max-width:480px){
+    .footer{
+        padding: 50px;
+        p{
+            width: 100px;
+            word-break: normal;
+        }
+    }
+}
