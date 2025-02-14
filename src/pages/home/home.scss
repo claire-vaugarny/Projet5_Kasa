@@ -5,3 +5,9 @@
     background-color: #F6F6F6;
     border-radius: 25px;
 }
+
+@media(max-width:480px){
+    .logementsList{
+        background-color: none;
+    }
+}

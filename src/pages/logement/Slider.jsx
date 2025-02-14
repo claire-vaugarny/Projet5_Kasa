@@ -17,6 +17,18 @@ function Slider({ pictures }) {
         setCurrentIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
     };
 
+    // Ne pas afficher les boutons si il n'y a qu'une image
+    if (pictures.length <= 1) {
+        return (
+            <div className="slider-container">
+                {/* Image actuelle */}
+                <div className="slider-image">
+                    <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="slider-container">
             {/* Flèche précédente */}
