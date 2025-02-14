@@ -1,7 +1,7 @@
 .slider-container {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 415px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +67,7 @@
 
 @media (max-width : 480px) {
     .slider-container {
+        height: 255px;
 
         .slider-button img {
             width: 20px;

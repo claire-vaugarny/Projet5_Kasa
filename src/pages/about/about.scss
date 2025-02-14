@@ -8,3 +8,9 @@
 #main-About{
     margin: 0;
 }
+
+@media (max-width:480px) {
+    .collapseContainer{
+        margin: 20px 0;
+    }
+}
