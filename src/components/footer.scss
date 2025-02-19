@@ -28,8 +28,6 @@
     font-weight: $font-wheight-regular;
     line-height: 17.11px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 }
 
@@ -37,7 +35,7 @@
   .footer {
     padding: 50px;
     p {
-      width: 100px;
+      width: 150px;
       word-break: normal;
     }
   }

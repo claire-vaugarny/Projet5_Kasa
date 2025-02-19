@@ -6,10 +6,10 @@ function Header() {
         <header className="header">
 
             <div id='logoHeader'>
-                <img src="../src/assets/logoHeader-K.svg" alt="Kasa logo" />
-                <img src="../src/assets/logoHeader-house.svg" alt="Kasa logo" />
-                <img src="../src/assets/logoHeader-s.svg" alt="Kasa logo" />
-                <img src="../src/assets/logoHeader-a.svg" alt="Kasa logo" />
+                <img id="logoHeaderK" src="../src/assets/logoHeader-K.svg" alt="Kasa logo" />
+                <img id="logoHeaderHouse"src="../src/assets/logoHeader-house.svg" alt="Kasa logo" />
+                <img id="logoHeaderS"src="../src/assets/logoHeader-s.svg" alt="Kasa logo" />
+                <img id="logoHeaderA"src="../src/assets/logoHeader-a.svg" alt="Kasa logo" />
             </div>
 
             <nav>

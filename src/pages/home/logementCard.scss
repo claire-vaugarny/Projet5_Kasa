@@ -36,3 +36,14 @@
     line-height: 25.67px;
   }
 }
+
+
+@media(max-width: 480px) {
+  .logementCardContainer{
+    width: 100%;
+    padding: 10px;
+  }
+  .logementCard{
+    height: 255px;
+  }
+}
