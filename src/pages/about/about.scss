@@ -1,16 +1,18 @@
-.collapseContainer{
-    display : flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 20px 70px;
+@import '../../_variables.scss';
+
+.collapseContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px 70px;
 }
 
-#main-About{
-    margin: 0;
+#main-About {
+  margin: 0;
 }
 
-@media (max-width:480px) {
-    .collapseContainer{
-        margin: 20px 0;
-    }
+@media (max-width: 480px) {
+  .collapseContainer {
+    margin: 20px 0;
+  }
 }

@@ -1,34 +1,37 @@
-.infoHostContainer{
-display: flex;
-align-items: center;
-.hostName{
-    font-family: 'Montserrat';
-font-weight: 500;
-font-size: 18px;
-line-height: 25.67px;
-text-align: right;
+@import '../../_variables.scss';
 
-width: 93px;
+.infoHostContainer {
+    display: flex;
+    align-items: center;
 
-color: #FF6060;
+    .hostName {
+        font-weight: $font-wheight-regular;
+        font-size: 18px;
+        line-height: 25.67px;
+        text-align: right;
+
+        width: 93px;
+
+        color: $primary-color;
+    }
+
+    img {
+        border-radius: 50px;
+        width: 64px;
+        height: 64px;
+        margin-left: 10px;
+    }
 }
 
-img{
-    border-radius: 50px;
-    width: 64px;
-    height: 64px;
-    margin-left: 10px;
-}
-}
-
-@media (max-width:480px) {
-    .infoHostContainer{
-        .hostName{
+@media (max-width: 480px) {
+    .infoHostContainer {
+        .hostName {
             width: 50%;
             font-size: 12px;
             line-height: 17.11px;
         }
-        img{
+
+        img {
             width: 32px;
             height: 32px;
             margin-left: 10px;

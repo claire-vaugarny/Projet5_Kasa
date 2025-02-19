@@ -1,70 +1,66 @@
+@import '../variables.scss';
+
 .collapse-container {
-    border-radius: 5px;
-    background-color: #FF6060;
+  border-radius: 5px;
+  background-color: $primary-color;
 }
 
 .collapse-title {
-    padding: 10px;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 18px;
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    cursor: pointer;
-    text-align: left;
-    color: #FFFFFF
+  padding: 10px;
+  font-weight: $font-wheight-bold;
+  font-size: 18px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  color: $text-color-primary;
 }
 
 .collapse-icon {
-    width: 20px;
-    /* Ajuste la taille de l'icône */
-    height: auto;
-    transition: transform 0.3s;
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s;
 }
 
 .collapse-icon.open {
-    transform: rotate(180deg);
-    /* Tourne l'icône pour indiquer l'ouverture */
+  transform: rotate(180deg);
 }
 
 .collapse-content {
-    padding: 10px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25.67px;
-
-    background-color: #F6F6F6;
+  padding: 10px;
+  font-weight: $font-wheight-thin;
+  font-size: 18px;
+  line-height: 25.67px;
+  background-color: $background-color;
 }
 
 .collapseLogement {
-    width: 50%;
+  width: 50%;
 }
 
 .collapseAbout {
-    width: 100%;
+  width: 100%;
 }
 
+@media (max-width: 480px) {
+  .collapse-container {
+    width: 100%;
 
-@media (max-width:480px) {
-    .collapse-container {
-        width: 100%;
-
-        .collapse-title {
-            font-size: 13px;
-            line-height: 18.54px;
-        }
-
-        .collapse-icon {
-            width: 14px;
-        }
-
-        .collapse-content {
-        font-size: 12px;
-        }
+    .collapse-title {
+      font-size: 13px;
+      line-height: 18.54px;
     }
+
+    .collapse-icon {
+      width: 14px;
+    }
+
+    .collapse-content {
+      font-size: 12px;
+    }
+  }
 }

@@ -1,13 +1,15 @@
+@import '../../_variables.scss';
+
 .logementsList {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    background-color: #F6F6F6;
-    border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  background-color: $background-color;
+  border-radius: 25px;
 }
 
-@media(max-width:480px){
-    .logementsList{
-        background-color: none;
-    }
+@media(max-width: 480px) {
+  .logementsList {
+    background-color: none;
+  }
 }

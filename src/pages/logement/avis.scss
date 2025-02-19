@@ -1,14 +1,17 @@
-.aviscontainer{
+@import '../../_variables.scss';
+
+.aviscontainer {
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-@media (max-width:480px) {
-    .aviscontainer{
+
+@media (max-width: 480px) {
+    .aviscontainer {
         gap: 0px;
-        img{
+        img {
             height: 13px;
             margin: 3px;
         }

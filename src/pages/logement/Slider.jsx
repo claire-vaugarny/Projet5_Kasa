@@ -41,6 +41,11 @@ function Slider({ pictures }) {
                 <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
             </div>
 
+            {/* Numérotation */}
+            <div className='slider-numerotation'>
+                {currentIndex + 1}/{pictures.length}
+            </div>
+
             {/* Flèche suivante */}
             <button onClick={handleNext} className="slider-button next">
                 <img src={arrowNext} alt="Next" />
