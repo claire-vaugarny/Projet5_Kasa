@@ -18,24 +18,26 @@ function Logement() {
     const rating = parseInt(logement.rating, 10);
     // Si on a trouvé le logement, on l'affiche
     return (
-        <div className='logementPage'>
-            <Slider pictures={logement.pictures} />
-            <div className="topInfoContainer">
-                <div className="infoLeftContainer">
-                    <h2>{logement.title}</h2>
-                    <h3>{logement.location}</h3>
-                    <Tags tags={logement.tags} />
+        <main>
+            <div className='logementPage'>
+                <Slider pictures={logement.pictures} />
+                <div className="topInfoContainer">
+                    <div className="infoLeftContainer">
+                        <h2>{logement.title}</h2>
+                        <h3>{logement.location}</h3>
+                        <Tags tags={logement.tags} />
+                    </div>
+                    <div className="infoRightcontainer">
+                        <InfoHost host={logement.host} />
+                        <Avis rating={rating} />
+                    </div>
                 </div>
-                <div className="infoRightcontainer">
-                    <InfoHost host={logement.host} />
-                    <Avis rating={rating} />
+                <div className="collapsesContainer">
+                    <Collapse collapseTitle={"Description"} collapseInfo={logement.description} collapsePage={'collapseLogement'} />
+                    <Collapse collapseTitle={"Équipements"} collapseInfo={logement.equipments} collapsePage={'collapseLogement'} />
                 </div>
             </div>
-            <div className="collapsesContainer">
-                <Collapse collapseTitle={"Description"} collapseInfo={logement.description} collapsePage={'collapseLogement'} />
-                <Collapse collapseTitle={"Équipements"} collapseInfo={logement.equipments} collapsePage={'collapseLogement'} />
-            </div>
-        </div>
+        </main>
     );
 }
 

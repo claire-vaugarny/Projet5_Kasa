@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
-        <main>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/error404" element={<Error_404 />} />
         <Route path="*" element={<Navigate to="/error404" />} />
       </Routes>
-      </main>
+
       <Footer />
     </Router>
   )

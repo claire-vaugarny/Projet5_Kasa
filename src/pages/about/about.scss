@@ -3,15 +3,20 @@
 .collapseContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 25px;
-  margin: 20px 70px;
+  margin: 20px 70px 40px 70px;
+  flex: 1;
+
 }
 
 #main-About {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .collapseContainer {
     margin: 20px 0;
   }

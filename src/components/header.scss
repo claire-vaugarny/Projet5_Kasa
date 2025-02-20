@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  padding: 10px 100px;
   margin: 20px 0;
 }
 
@@ -47,12 +47,12 @@
   text-decoration: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header {
     height: fit-content;
     width: 100%;
-    padding: 0;
-    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    margin: 0px;
     
     ul {
       gap: 20px;

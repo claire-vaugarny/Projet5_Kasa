@@ -6,6 +6,7 @@ import LogementCard from './LogementCard'
 
 function Home() {
     return (
+        <main>
         <div className='homecontainer'>
             <Banner image={bannerAcceuil} title="Chez vous, partout et ailleurs" />
             <section className="logementsList">
@@ -14,6 +15,7 @@ function Home() {
                 ))}
             </section>
         </div>
+        </main>
     );
 }
 

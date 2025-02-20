@@ -38,10 +38,10 @@
 }
 
 
-@media(max-width: 480px) {
+@media(max-width: 768px) {
   .logementCardContainer{
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
   }
   .logementCard{
     height: 255px;
