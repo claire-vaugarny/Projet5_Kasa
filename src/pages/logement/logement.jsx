@@ -7,16 +7,34 @@ import Collapse from '../../components/Collapse';
 import Tags from './Tags';
 import Slider from './Slider';
 
+import React, { useState, useEffect } from 'react';
+import Loader from './Loader';
+
 function Logement() {
     const { id } = useParams();
-    const logement = logements.find((logement) => logement.id === id);
+    const [isLoading, setIsLoading] = useState(true);
+    const [logement, setLogement] = useState(null);
+ 
+    useEffect(() => {
+        // Récupération des données
+        const fetchedLogement = logements.find((logement) => logement.id === id);
+        
+        setLogement(fetchedLogement);
+        setIsLoading(false);
+    }, [id]); // On refait l'opération si l'ID change
+
+    // Si on est en train de charger, afficher le Loader
+    if (isLoading) {
+        return <Loader />;
+    }
 
     // Si aucun logement n'a été trouvé, on redirige vers la page Error404
     if (!logement) {
         return <Navigate to="/error404" />;
     }
-    const rating = parseInt(logement.rating, 10);
+
     // Si on a trouvé le logement, on l'affiche
+    const rating = parseInt(logement.rating, 10);
     return (
         <main>
             <div className='logementPage'>
