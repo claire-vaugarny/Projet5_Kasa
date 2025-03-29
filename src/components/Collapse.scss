@@ -29,14 +29,24 @@
 .collapse-icon.open {
   transform: rotate(180deg);
 }
-
+//////////////
 .collapse-content {
   padding: 10px;
   font-weight: $font-wheight-thin;
   font-size: 18px;
   line-height: 25.67px;
   background-color: $background-color;
+  overflow: hidden;
+  max-height: 0; // Initialement, le contenu est masqué
+  height: auto; // Pour permettre une hauteur dynamique
+  transition: max-height 0.3s ease-out; // Transition pour dérouler l'élément
 }
+
+.collapse-content.open {
+  max-height: 9999px; // Valeur suffisamment grande pour contenir le contenu
+}
+
+///////////////
 
 .collapseLogement {
   width: 50%;
